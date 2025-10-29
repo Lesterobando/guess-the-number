@@ -3,7 +3,7 @@ body {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    font-size: large;
+    font-size: 16px;
     height: 100vh;
     background-image: url('2150061737.jpg');
     background-size: cover;
@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    padding: 80px;
+    padding: 40px;
 }
 
 @keyframes gradientBG {
@@ -80,4 +80,5 @@ button {
 
 #guessCount {
     font-weight: bold;
+
 }
