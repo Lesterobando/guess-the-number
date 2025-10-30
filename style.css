@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     margin: 0;
     padding: 40px;
 }
@@ -82,4 +82,5 @@ button {
     font-weight: bold;
 
 }
+
 
