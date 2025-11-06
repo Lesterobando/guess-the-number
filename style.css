@@ -73,8 +73,13 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 #submitBtn {
-    background-color: rgba(255, 255, 0, 0.658);
+    background-color: rgba(255, 255, 0, 0.85);
     color: black;
     border: 3px solid black;
     border-radius: 10px;
@@ -83,21 +88,34 @@ button {
 #restartBtn {
     background-color: rgba(144, 238, 144, 0.589);
     border: 3px solid black;
-    border-radius: 10px;
-    font-weight: bold;
 }
 
 #feedback {
-    font-size: 2em;
+    font-size: clamp(1.2rem, 5vw, 2em;
     font-weight: bold;
     text-shadow: 2px 2px 5px black;
     margin-top: 20px;    
     color: rgb(241, 106, 241)
+    max-width: 90%;
 }
 
 #guessCount {
     font-weight: bold;
 
+}
+/* Media Query for larger screens (e.g., tablet landscape and desktop) */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+    
+    /* On larger screens, ensure input and button fit nicely */
+    input {
+        /* Remove margin-right when the layout is primarily horizontal */
+        margin-right: 15px; 
+        margin-bottom: 0;
+        width: auto; /* Allow flex to size it naturally */
+    }
 }
 
 
