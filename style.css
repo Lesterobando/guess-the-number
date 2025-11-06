@@ -49,6 +49,16 @@ p {
     margin: 60px auto;
 }
 
+.controls-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on very small screens */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
 input {
     padding: 15px;
     font-size: clamp(1rem, 4vw, 1.5em;
@@ -117,6 +127,7 @@ button:active {
         width: auto; /* Allow flex to size it naturally */
     }
 }
+
 
 
 
