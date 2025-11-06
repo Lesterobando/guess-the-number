@@ -6,7 +6,6 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 1.5rem;
-    font-size: 16px;
     height: 100vh;
     background-image: url('2150061737.jpg');
     background-size: cover;
@@ -16,6 +15,8 @@ body {
     margin: 0;
     justify-content: center;
     box-sizing: border-box;
+    font-size: 16px;
+    color: white;
 }
 
 @keyframes gradientBG {
@@ -127,6 +128,7 @@ button:active {
         width: auto; /* Allow flex to size it naturally */
     }
 }
+
 
 
 
