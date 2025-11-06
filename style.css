@@ -37,13 +37,14 @@ h1 {
 }
 
 p {
-    font-size: 2em;  
+    font-size: clamp(1.2rem 5vw, 2em);  
     font-weight: bold;
     text-shadow: 2px 2px 2px rgb(111, 91, 199);
     background-color: rgba(36, 98, 231, 0.705);
-    padding: 2%;
+    padding: 2vw, 2%;
     border-radius: 20px;
     box-shadow: 0 0 20px black;
+    width: 90%;
     max-width: 600px;
     margin: 60px auto;
 }
@@ -92,6 +93,7 @@ button {
     font-weight: bold;
 
 }
+
 
 
 
