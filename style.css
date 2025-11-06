@@ -47,7 +47,8 @@ p {
     box-shadow: 0 0 20px black;
     width: 90%;
     max-width: 600px;
-    margin: 60px auto;
+    margin: 10px auto;
+    color: white;
 }
 
 .controls-container {
@@ -63,30 +64,40 @@ p {
 input {
     padding: 15px;
     font-size: clamp(1rem, 4vw, 1.5em;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    margin: 10px 10px 10px 0;
+    margin: 10px;
     max-width: 200px;
     width:100%;
     background-color: rgba(255, 255, 255, 0.836);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button {
     min-height: 44px;
     padding: 12px 20px;
     font-size: clamp(1em 3vw, 1.2rem);
-    margin: 5px;
+    margin: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-    font-weight: 600;
+    font-weight: 700;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 button:active {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 #submitBtn {
@@ -96,9 +107,18 @@ button:active {
     border-radius: 10px;
     font-weight: bold;
 }
+
+#submitBtn:hover {
+    background-color: #ffcc00; 
+}
+
 #restartBtn {
     background-color: rgba(144, 238, 144, 0.589);
     border: 3px solid black;
+}
+
+#restartBtn:hover {
+    background-color: #8ce98c;
 }
 
 #feedback {
@@ -108,10 +128,15 @@ button:active {
     margin-top: 20px;    
     color: rgb(241, 106, 241)
     max-width: 90%;
+    background-color: transparent; 
+    box-shadow: none;
 }
 
 #guessCount {
     font-weight: bold;
+    color: white; 
+    background-color: transparent; 
+    box-shadow: none;
 
 }
 /* Media Query for larger screens (e.g., tablet landscape and desktop) */
@@ -119,15 +144,13 @@ button:active {
     body {
         padding: 40px;
     }
-    
-    /* On larger screens, ensure input and button fit nicely */
-    input {
-        /* Remove margin-right when the layout is primarily horizontal */
-        margin-right: 15px; 
-        margin-bottom: 0;
-        width: auto; /* Allow flex to size it naturally */
+    .controls-container {
+        /* Reduce margin between elements on larger screens */
+        gap: 15px; 
     }
+    
 }
+
 
 
 
