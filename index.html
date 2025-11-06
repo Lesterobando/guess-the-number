@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
+
 <body>
     
     <h1>Guess the Number...</h1>
 
-    <p>Enter a number between <span id="min">1</span> and <span id="max">100</span>:</p>
-<div class="controls-container">
-    <input type="number" id="guessInput" placeholder="Your guess">
-    <button id="submitBtn">Submit</button>
-    <button id="restartBtn">Restart</button>
-</div>
+    <p>Enter a number between <span id="min">0</span> and <span id="max">200</span>:</p>
+    <div class="controls-container">
+        <input type="number" id="guessInput" placeholder="Your guess">
+        <button id="submitBtn">Submit</button>
+        <button id="restartBtn">Restart</button>
+    </div>
     <p id="feedback"></p>
     <p>Number of guesses: <span id="guessCount">0</span></p>
 
+
+    <audio id="errorSound" src="Assets/invalid-selection-39351.mp3" preload="auto"></audio>
+    <audio id="winsound" src="Assets/victory-chime-366449.mp3" preload="auto"></audio>
+    <audio id="wrongsound" src="Assets/error-04-199275.mp3" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
-
 </html>
