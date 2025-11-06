@@ -50,11 +50,13 @@ p {
 }
 
 input {
-    padding: 10px;
-    font-size: 1.5em;
+    padding: 15px;
+    font-size: clamp(1rem, 4vw, 1.5em;
     border-radius: 5px;
     border: none;
-    margin-right: 10px;
+    margin: 10px 10px 10px 0;
+    max-width: 200px;
+    width:100%;
     background-color: rgba(255, 255, 255, 0.836);
 }
 
@@ -93,6 +95,7 @@ button {
     font-weight: bold;
 
 }
+
 
 
 
