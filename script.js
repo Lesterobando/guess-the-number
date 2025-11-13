@@ -1,7 +1,7 @@
 let randomNumber;
 let guessCount = 0;
 let min = 0;
-let max = 200;
+let max = 10;
 
 const guessInput = document.getElementById("guessInput");
 const feedback = document.getElementById("feedback");
@@ -71,3 +71,4 @@ guessInput.addEventListener("keyup", function(event) {
 });
 
 startGame();
+
